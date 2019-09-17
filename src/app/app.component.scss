@@ -1,0 +1,26 @@
+header .container {
+  height: 100px;
+  // background: #ccc;
+}
+
+#content .container {
+  min-height: 300px;
+  min-width: 200px;
+  // background: whitesmoke;
+}
+
+.col-sm-4 {
+  -webkit-box-flex: 0;
+  flex: 0 0 33.333333%;
+  max-width: 21.333333%;
+}
+
+.side-nav {
+  // background: lightblue;
+  min-height: 500px;
+}
+
+footer .container  {
+  height: 75px;
+  // background: #ccc;
+}

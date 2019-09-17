@@ -1,0 +1,34 @@
+<div class="col-md-6">
+    <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <table>
+      <tr>
+        <th style="width: 150px;"><input type="id" formControlName="id" placeholder="Id" name="id" class="form-control" id="id"></th>
+        <th style="width: 500px;"><input type="name" formControlName="name" placeholder="Name" name="name" class="form-control" id="name"></th>
+        <th style="width: 700px;"><input type="email" formControlName="email" placeholder="Email" name="email" class="form-control" id="email"></th>
+        <th></th>
+        <th><button class="btn btn-success">Register</button></th>
+      </tr>
+    </table>
+  </form>
+</div>
+
+<div class="col-md-6">
+    <h2> Employee Details</h2>
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let student of students">
+        <td>{{student.id}}</td>
+        <td>{{student.name}}</td>
+        <td>{{student.email}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
